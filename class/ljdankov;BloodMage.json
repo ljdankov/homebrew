@@ -1,5 +1,4 @@
 {
-	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
 		"sources": [{
 			"json": "BloodMage",
@@ -16,728 +15,738 @@
 			"targetSchema": "1.0.0"
 		}],
 		"dateAdded": 1687985032,
-		"dateLastModified": 1687985032,
-		"class": [{
-			"name": "Blood Mage",
-			"source": "Relic",
-			"hd": {
-				"number": 1,
-				"faces": 6
-			},
-			"proficiency": [
-				"con",
-				"int"
-			],
-			"spellcastingAbility": "wis",
-			"casterProgression": "full",
-			"spellsKnownProgression": [
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				12,
-				13,
-				13,
-				13,
-				14,
-				14,
-				15,
-				15,
-				15
-			],
-			"cantripProgression": [
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				5,
-				6,
-				6,
-				6,
-				6,
-				6,
-				6
-			]
-		}],
-		"startingProficiencies": {
-			"armor": [
-				"none"
-			],
-			"weapons": [
-				"{@item dagger|phb}",
-				"{@item dart|phb}",
-				"{@item sling|phb}",
-				"{@item quarterstaff|phb}",
-				"{@item light crossbow|phb}"
-			],
-			"tools": [
-				"{@item poisoners' kit|phb}",
-				"{@item herbalists' kit|phb}"
-			],
-			"skills": [{
-				"choose": {
-					"from": [
-						"arcana",
-						"deception",
-						"history",
-						"intimidation",
-						"medicine"
-					],
-					"count": 2
-				}
-			}]
-		},
-		"startingEquipment": {
-			"additionalFromBackground": true,
-			"default": [
-				"(a) a {@item quarterstaff|phb} or (b) {@filter dagger|phb}",
-				"(a) {@item component pouch|phb},  or (c) {@item arcane focus|phb}",
-				"(a) {@item explorer's pack|phb} and (b) {@item dungeoneer's pack|phb}"
-			],
-			"defaultData": [{
-					"a": [
-						"quarterstaff|phb"
-					],
-					"b": [
-						"dagger|phb"
-					]
-				},
-				{
-					"a": [
-						"component pouch|phb"
-					],
-					"b": [
-						"arcane focus|phb"
-					]
-				},
-
-				{
-					"_": [
-						"explorer's pack|phb",
-						"dungeoneer's pack|phb"
-					]
-				}
-			]
-		},
-		"multiclassing": {
-			"requirements": {
-				"con": 13
-			},
-			"proficienciesGained": {
-				"skills": [{
-					"arcana": true
-				}],
-				"tools": [
-					"one type of {@item artisan's tools|phb} of your choice "
-				]
-			},
-			"entries": [
-				"For the purpose of multiclassing and spell slots, add your blood levels when calculating your Spell Slots on the Multiclassing Spells Slots table (like {@class paladin} or {@class ranger})."
-			]
-		},
-		"classTableGroups": [{
-				"colLabels": [
-					"{@ Spells Known}"
-				],
-				"rows": [
-					[
-						2
-					],
-					[
-						3
-					],
-					[
-						4
-					],
-					[
-						5
-					],
-					[
-						6
-					],
-					[
-						7
-					],
-					[
-						8
-					],
-					[
-						9
-					],
-					[
-						10
-					],
-					[
-						11
-					],
-					[
-						12
-					],
-					[
-						12
-					],
-					[
-						13
-					],
-					[
-						13
-					],
-					[
-						14
-					],
-					[
-						14
-					],
-					[
-						15
-					],
-					[
-						15
-					],
-					[
-						15
-					],
-					[
-						16
-					]
-				]
-			},
-			{
-				"title": "Spell Slots per Spell Level",
-				"colLabels": [
-					"{@filter Cantrips|spells|level=0|class=bloodmage (bm)}",
-					"{@filter 1st|spells|level=1|class=bloodmage (bm)}",
-					"{@filter 2nd|spells|level=2|class=bloodmage (bm)}",
-					"{@filter 3rd|spells|level=3|class=bloodmage (bm)}",
-					"{@filter 4th|spells|level=4|class=bloodmage (bm)}",
-					"{@filter 5th|spells|level=5|class=bloodmage (bm)}",
-					"{@filter 6th|spells|level=6|class=bloodmage (bm)}",
-					"{@filter 7th|spells|level=7|class=bloodmage (bm)}",
-					"{@filter 8th|spells|level=8|class=bloodmage (bm)}",
-					"{@filter 9th|spells|level=9|class=bloodmage (bm)}"
-				],
-				"rows": [
-					[
-						4,
-						2,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						4,
-						3,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						4,
-						4,
-						2,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						5,
-						4,
-						3,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						5,
-						4,
-						3,
-						2,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						5,
-						4,
-						3,
-						3,
-						0,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						5,
-						4,
-						3,
-						3,
-						1,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						5,
-						4,
-						3,
-						3,
-						2,
-						0,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						5,
-						4,
-						3,
-						3,
-						3,
-						1,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						2,
-						0,
-						0,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						2,
-						1,
-						0,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						2,
-						1,
-						0,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						2,
-						1,
-						1,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						1,
-						1,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						1,
-						1,
-						0,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						1,
-						1,
-						1,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						2,
-						1,
-						1,
-						0
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						2,
-						1,
-						1,
-						1
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						3,
-						1,
-						1,
-						1
-					],
-					[
-						6,
-						4,
-						3,
-						3,
-						3,
-						3,
-						3,
-						2,
-						1,
-						1
-					]
-				]
-			}
-		],
-		"classFeatures": [
-			"Spellcasting|BloodMage|Blood Mage|BloodMage|1",
-			{
-				"classFeature": "Dark Art Feature|Blood Mage|BloodMage|1",
-				"gainsubclassFeatures": true
-			},
-			"Sacrificial Magic|BloodMage|Blood Mage|BloodMage|2",
-			"Malediction|BloodMage|Blood Mage|BloodMage|3",
-			"Ability Score Improvement|Blood Mage|BloodMage|4",
-			"Malediction 2/rest |Dark Art|Blood Mage|BloodMage|5",
-			{
-				"classFeature": "Dark Art Feature|Blood Mage|BloodMage|6",
-				"gainsubclassFeatures": true
-			},
-			"Additional Malediction|BloodMage|Blood Mage|BloodMage|6",
-			"Ability Score Improvement|Blood Mage|BloodMage|8",
-			"Additional Malediction|BloodMage|Blood Mage|BloodMage|9",
-			"Malediction 3/rest |Dark Art|Blood Mage|BloodMage|10",
-			"Additional Malediction|BloodMage|Blood Mage|BloodMage|12",
-			"Ability Score Improvement|Blood Mage|BloodMage|12",
-			{
-				"classFeature": "Dark Art Feature|Blood Mage|BloodMage|14",
-				"gainsubclassFeatures": true
-			},
-			"Additional Malediction|BloodMage|Blood Mage|BloodMage|15",
-			"Ability Score Improvement|Blood Mage|BloodMage|16",
-			"Malediction 3/rest |Dark Art|Blood Mage|BloodMage|17",
-			"Additional Malediction|BloodMage|Blood Mage|BloodMage|18",
-			{
-				"classFeature": "Dark Art Feature|Blood Mage|BloodMage|18",
-				"gainsubclassFeatures": true
-			},
-			"Ability Score Improvement|Blood Mage|BloodMage|19",
-			"Profane Recovery|Blood Mage|BloodMage|20"
-		],
-		"subclassTitle": "Blood Mage Dark Art",
-		"classSpells": [
-			"Acid Splash",
-			"Blade Ward",
-			"Chill Touch",
-			"Frostbite",
-			"Infestation",
-			"Guidance",
-			"Mage Hand",
-			"Magic Stone",
-			"Message",
-			"Poison Spray",
-			"Produce Flame",
-			"Resistance",
-			"Spare the Dying",
-			"Toll the Dead",
-			"Vicious Mockery",
-			"Armor of Agathys",
-			"Arms of Hadar",
-			"Bless",
-			"Bane",
-			"Cause Fear",
-			"Cure Wounds",
-			"Detect Poison and Disease",
-			"Dissonant Whispers",
-			"Entangle",
-			"Expeditious Retreat",
-			"False Life",
-			"Find Familiar",
-			"Fog Cloud",
-			"Hellish Rebuke",
-			"Hex",
-			"Hideous Laughter",
-			"Inflict Wounds",
-			"Jump",
-			"Mage Armor",
-			"Ray of Sickness",
-			"Shield",
-			"Sleep",
-			"Thunderwave",
-			"Unseen Servant",
-			"Witch Bolt",
-			"Aid",
-			"Alter Self",
-			"Augury",
-			"Blindness/Deafness",
-			"Blur",
-			"Cloud of Daggers",
-			"Darkness",
-			"Darkvision",
-			"Earthbind",
-			"Enhance Ability",
-			"Enlarge/Reduce",
-			"Hold Person",
-			"Invisibility",
-			"Levitate",
-			"Locate Animals or Plants",
-			"Magic Weapon",
-			"Mirror Image",
-			"Protection from Poison",
-			"Ray of Enfeeblement",
-			"See Invisibility",
-			"Shadow Blade",
-			"Shatter",
-			"Spider Climb",
-			"Spike Growth",
-			"Web",
-			"Animate Dead",
-			"Bestow Curse",
-			"Counterspell",
-			"Dispel Magic",
-			"Erupting Earth",
-			"Fear",
-			"Feign Death",
-			"Fly",
-			"Gaseous Form",
-			"Glyph of Warding",
-			"Haste",
-			"Hunger of Hadar",
-			"Life Transference",
-			"Magic Circle",
-			"Mass Healing Word",
-			"Phantom Steed",
-			"Plant Growth",
-			"Revivify",
-			"Sending",
-			"Slow",
-			"Speak with Dead",
-			"Speak with Plants",
-			"Stinking Cloud",
-			"Summon Lesser Demon",
-			"Tiny Servant",
-			"Tongues",
-			"Vampiric Touch",
-			"Water Breathing",
-			"Arcane Eye",
-			"Banishment",
-			"Blight",
-			"Control Water",
-			"Death Ward",
-			"Dominate Beast",
-			"Giant Insect",
-			"Grasping Vine",
-			"Greater Invisibility",
-			"Locate Creature",
-			"Polymorph",
-			"Resilient Sphere",
-			"Shadow of Moil",
-			"Sickening Radiance",
-			"Stoneskin",
-			"Summon Greater Demon",
-			"Vitriolic Sphere",
-			"Animate Objects",
-			"Antilife Shell",
-			"Circle of Power",
-			"Cloudkill",
-			"Contagion",
-			"Danse Macabre",
-			"Destructive Wave",
-			"Dominate Person",
-			"Enervation",
-			"Geas",
-			"Hold Monster",
-			"Infernal Calling",
-			"Insect Plague",
-			"Mass Cure Wounds",
-			"Negative Energy Flood",
-			"Passwall",
-			"Planar Binding",
-			"Raise Dead",
-			"Telepathic Bond",
-			"Teleportation Circle",
-			"Arcane Gate",
-			"Bones of the Earth",
-			"Circle of Death",
-			"Contingency",
-			"Create Homunculus",
-			"Create Undead",
-			"Disintegrate",
-			"Eyebite",
-			"Flesh to Stone",
-			"Forbiddance",
-			"Harm",
-			"Heal",
-			"Magic Jar",
-			"Move Earth",
-			"Soul Cage",
-			"Tenser's Transformation",
-			"True Seeing",
-			"Wall of Thorns",
-			"Crown of Stars",
-			"Etherealness",
-			"Finger of Death",
-			"Fire Storm",
-			"Forcecage",
-			"Plane Shift",
-			"Power Word Pain",
-			"Prismatic Spray",
-			"Regenerate",
-			"Resurrection",
-			"Sequester",
-			"Simulacrum",
-			"Symbol",
-			"Antimagic Field",
-			"Antipathy/Sympathy",
-			"Clone",
-			"Dominate Monster",
-			"Earthquake",
-			"Feeblemind",
-			"Horrid Wilting",
-			"Maddening Darkness",
-			"Maze",
-			"Mighty Fortress",
-			"Mind Blank",
-			"Power Word Stun",
-			"Telepathy",
-			"Astral Projection",
-			"Imprisonment",
-			"Invulnerability",
-			"Mass Heal",
-			"Mass Polymorph",
-			"Power Word Heal",
-			"Power Word Kill",
-			"Psychic Scream",
-			"Shapechange",
-			"Time Stop",
-			"True Polymorph",
-			"True Resurrection",
-			"Weird",
-			"Wish"
-		],
-		"fluff": [{
-			"type": "section",
-			"name": "BloodMage",
-			"source": "TheBloodMage",
-			"page": 1,
-			"entries": [
-				"Wizards study a wide variety of arcane spells and rituals in pursuit of greater knowledge and power.  Sorcerers draw upon a wellspring of innate magic available to them because of their exotic heritage. Blood mages carve their will into their own flesh, focusing their desires through offerings of blood.",
-				{
-					"type": "entries",
-					"name": " Forbidden Rites",
-					"page": 1,
-					"entries": [
-						"A wise mage once said 'Magic is the bloodstream of the universe.'",
-						" To a blood mage this is undeniable truth, and the connection is quickly drawn between the cosmic flow of energy and one's own life essence.",
-						"Blood mages have no use for spellbooks and ancient lore, nor do they rely on an otherwordly patron or deity to gift them with supernatural powers. Instead they see power as a tool to be used by those with the fortitude to do so."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Creating a Blood Mage",
-					"page": 1,
-					"entries": [
-						"Creating a blood mage character demands a backstory dominated by a thirst for esoteric knowledge and forbidden secrets. What was your first experience with death? How did you learn you had an aptitude for manipulating the Weave with your blood? Did you encounter a magical creature or an ancient tome that gave you your first glimpse at the dark potential of blood magic?",
-						{
-							"type": "entries",
-							"name": "Quick Build",
-							"page": 1,
-							"entries": [
-								"You can make a blood mage quickly by following these suggestions. First, Constitution should be your highest ability score, followed by Dexterity or Wisdom. Second, choose the hermit background. Third, choose the {@spell acid splash}, {@spell poison spray}, {@spell spare the dying}, and {@spell vicious mockery} cantrips, along with the 1st-level spells {@spell inflict wounds} and {@spell mage armor}."
-							]
-						}
-					]
-				}
-			]
-		}],
-		"classFeature": [{
+		"dateLastModified": 1687985032
+    },
+    "class":
+    [
+        {
+    		"name": "Blood Mage",
+	    	"source": "BloodMage",
+            "classFeatures": 
+                [
+			        "Spellcasting|BloodMage|Blood Mage|BloodMage|1",
+                    {
+                        "classFeature": "Dark Art Feature|Blood Mage|BloodMage|1",
+                        "gainsubclassFeatures": true
+                    },
+                    "Sacrificial Magic|BloodMage|Blood Mage|BloodMage|2",
+                    "Malediction|BloodMage|Blood Mage|BloodMage|3",
+                    "Ability Score Improvement|Blood Mage|BloodMage|4",
+                    "Malediction 2/rest |Dark Art|Blood Mage|BloodMage|5",
+                    {
+                        "classFeature": "Dark Art Feature|Blood Mage|BloodMage|6",
+                        "gainsubclassFeatures": true
+                    },
+                    "Additional Malediction|BloodMage|Blood Mage|BloodMage|6",
+                    "Ability Score Improvement|Blood Mage|BloodMage|8",
+                    "Additional Malediction|BloodMage|Blood Mage|BloodMage|9",
+                    "Malediction 3/rest |Dark Art|Blood Mage|BloodMage|10",
+                    "Additional Malediction|BloodMage|Blood Mage|BloodMage|12",
+                    "Ability Score Improvement|Blood Mage|BloodMage|12",
+                    {
+                        "classFeature": "Dark Art Feature|Blood Mage|BloodMage|14",
+                        "gainsubclassFeatures": true
+                    },
+                    "Additional Malediction|BloodMage|Blood Mage|BloodMage|15",
+                    "Ability Score Improvement|Blood Mage|BloodMage|16",
+                    "Malediction 3/rest |Dark Art|Blood Mage|BloodMage|17",
+                    "Additional Malediction|BloodMage|Blood Mage|BloodMage|18",
+                    {
+                        "classFeature": "Dark Art Feature|Blood Mage|BloodMage|18",
+                        "gainsubclassFeatures": true
+                    },
+                    "Ability Score Improvement|Blood Mage|BloodMage|19",
+                    "Profane Recovery|Blood Mage|BloodMage|20"
+                ],
+            "hd": {
+                "number": 1,
+                "faces": 6
+            },
+            "proficiency": [
+                "con",
+                "int"
+            ],
+            "startingProficiencies": {
+                "armor": [],
+                "weapons": [
+                    "{@item dagger|phb}",
+                    "{@item dart|phb}",
+                    "{@item sling|phb}",
+                    "{@item quarterstaff|phb}",
+                    "{@item light crossbow|phb}"
+                ],
+                "tools": [
+                    "{@item poisoners' kit|phb}",
+                    "{@item herbalists' kit|phb}"
+                ],
+                "skills": [{
+                    "choose": {
+                        "from": [
+                            "arcana",
+                            "deception",
+                            "history",
+                            "intimidation",
+                            "medicine"
+                        ],
+                        "count": 2
+                    }
+                }]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item quarterstaff|phb} or (b) {@filter dagger|phb}",
+                    "(a) {@item component pouch|phb},  or (c) {@item arcane focus|phb}",
+                    "(a) {@item explorer's pack|phb} and (b) {@item dungeoneer's pack|phb}"
+                ],
+                "defaultData": [{
+                        "a": [
+                            "quarterstaff|phb"
+                        ],
+                        "b": [
+                            "dagger|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            "component pouch|phb"
+                        ],
+                        "b": [
+                            "arcane focus|phb"
+                        ]
+                    },
+    
+                    {
+                        "_": [
+                            "explorer's pack|phb",
+                            "dungeoneer's pack|phb"
+                        ]
+                    }
+                ]
+            },
+            "multiclassing": {
+                "requirements": {
+                    "con": 13
+                },
+                "proficienciesGained": {
+                    "skills": [{
+                        "arcana": true
+                    }],
+                    "tools": [
+                        "one type of {@item artisan's tools|phb} of your choice "
+                    ]
+                },
+                "entries": [
+                    "For the purpose of multiclassing and spell slots, add your blood levels when calculating your Spell Slots on the Multiclassing Spells Slots table (like {@class paladin} or {@class ranger})."
+                ]
+            },
+            "spellcastingAbility": "con",
+            "casterProgression": "full",
+            "cantripProgression": [
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                6,
+                6,
+                6,
+                6,
+                6,
+                6
+            ],
+            "spellsKnownProgression": [
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                12,
+                13,
+                13,
+                13,
+                14,
+                14,
+                15,
+                15,
+                15
+            ],
+            "classTableGroups": 
+            [
+                {
+				    "colLabels": [
+					    "{@ Spells Known}"
+				    ],
+				    "rows": [
+                        [
+                            2
+                        ],
+                        [
+                            3
+                        ],
+                        [
+                            4
+                        ],
+                        [
+                            5
+                        ],
+                        [
+                            6
+                        ],
+                        [
+                            7
+                        ],
+                        [
+                            8
+                        ],
+                        [
+                            9
+                        ],
+                        [
+                            10
+                        ],
+                        [
+                            11
+                        ],
+                        [
+                            12
+                        ],
+                        [
+                            12
+                        ],
+                        [
+                            13
+                        ],
+                        [
+                            13
+                        ],
+                        [
+                            14
+                        ],
+                        [
+                            14
+                        ],
+                        [
+                            15
+                        ],
+                        [
+                            15
+                        ],
+                        [
+                            15
+                        ],
+                        [
+                            16
+                        ]
+                    ]
+			    },
+			    {
+				    "title": "Spell Slots per Spell Level",
+				    "colLabels": [
+                        "{@filter Cantrips|spells|level=0|class=bloodmage (bm)}",
+                        "{@filter 1st|spells|level=1|class=bloodmage (bm)}",
+                        "{@filter 2nd|spells|level=2|class=bloodmage (bm)}",
+                        "{@filter 3rd|spells|level=3|class=bloodmage (bm)}",
+                        "{@filter 4th|spells|level=4|class=bloodmage (bm)}",
+                        "{@filter 5th|spells|level=5|class=bloodmage (bm)}",
+                        "{@filter 6th|spells|level=6|class=bloodmage (bm)}",
+                        "{@filter 7th|spells|level=7|class=bloodmage (bm)}",
+                        "{@filter 8th|spells|level=8|class=bloodmage (bm)}",
+                        "{@filter 9th|spells|level=9|class=bloodmage (bm)}"
+                    ],
+				    "rows": [
+					    [
+                            4,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            4,
+                            4,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            4,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            4,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            4,
+                            3,
+                            3,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            4,
+                            3,
+                            3,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            4,
+                            3,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            5,
+                            4,
+                            3,
+                            3,
+                            3,
+                            1,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            0,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            0,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            0,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            3,
+                            1,
+                            1,
+                            1
+                        ],
+                        [
+                            6,
+                            4,
+                            3,
+                            3,
+                            3,
+                            3,
+                            3,
+                            2,
+                            1,
+                            1
+                        ]
+				    ]
+			    }
+		    ],
+            "subclassTitle": "Blood Mage Dark Art",
+            "classSpells": [
+                "Acid Splash",
+                "Blade Ward",
+                "Chill Touch",
+                "Frostbite",
+                "Infestation",
+                "Guidance",
+                "Mage Hand",
+                "Magic Stone",
+                "Message",
+                "Poison Spray",
+                "Produce Flame",
+                "Resistance",
+                "Spare the Dying",
+                "Toll the Dead",
+                "Vicious Mockery",
+                "Armor of Agathys",
+                "Arms of Hadar",
+                "Bless",
+                "Bane",
+                "Cause Fear",
+                "Cure Wounds",
+                "Detect Poison and Disease",
+                "Dissonant Whispers",
+                "Entangle",
+                "Expeditious Retreat",
+                "False Life",
+                "Find Familiar",
+                "Fog Cloud",
+                "Hellish Rebuke",
+                "Hex",
+                "Hideous Laughter",
+                "Inflict Wounds",
+                "Jump",
+                "Mage Armor",
+                "Ray of Sickness",
+                "Shield",
+                "Sleep",
+                "Thunderwave",
+                "Unseen Servant",
+                "Witch Bolt",
+                "Aid",
+                "Alter Self",
+                "Augury",
+                "Blindness/Deafness",
+                "Blur",
+                "Cloud of Daggers",
+                "Darkness",
+                "Darkvision",
+                "Earthbind",
+                "Enhance Ability",
+                "Enlarge/Reduce",
+                "Hold Person",
+                "Invisibility",
+                "Levitate",
+                "Locate Animals or Plants",
+                "Magic Weapon",
+                "Mirror Image",
+                "Protection from Poison",
+                "Ray of Enfeeblement",
+                "See Invisibility",
+                "Shadow Blade",
+                "Shatter",
+                "Spider Climb",
+                "Spike Growth",
+                "Web",
+                "Animate Dead",
+                "Bestow Curse",
+                "Counterspell",
+                "Dispel Magic",
+                "Erupting Earth",
+                "Fear",
+                "Feign Death",
+                "Fly",
+                "Gaseous Form",
+                "Glyph of Warding",
+                "Haste",
+                "Hunger of Hadar",
+                "Life Transference",
+                "Magic Circle",
+                "Mass Healing Word",
+                "Phantom Steed",
+                "Plant Growth",
+                "Revivify",
+                "Sending",
+                "Slow",
+                "Speak with Dead",
+                "Speak with Plants",
+                "Stinking Cloud",
+                "Summon Lesser Demon",
+                "Tiny Servant",
+                "Tongues",
+                "Vampiric Touch",
+                "Water Breathing",
+                "Arcane Eye",
+                "Banishment",
+                "Blight",
+                "Control Water",
+                "Death Ward",
+                "Dominate Beast",
+                "Giant Insect",
+                "Grasping Vine",
+                "Greater Invisibility",
+                "Locate Creature",
+                "Polymorph",
+                "Resilient Sphere",
+                "Shadow of Moil",
+                "Sickening Radiance",
+                "Stoneskin",
+                "Summon Greater Demon",
+                "Vitriolic Sphere",
+                "Animate Objects",
+                "Antilife Shell",
+                "Circle of Power",
+                "Cloudkill",
+                "Contagion",
+                "Danse Macabre",
+                "Destructive Wave",
+                "Dominate Person",
+                "Enervation",
+                "Geas",
+                "Hold Monster",
+                "Infernal Calling",
+                "Insect Plague",
+                "Mass Cure Wounds",
+                "Negative Energy Flood",
+                "Passwall",
+                "Planar Binding",
+                "Raise Dead",
+                "Telepathic Bond",
+                "Teleportation Circle",
+                "Arcane Gate",
+                "Bones of the Earth",
+                "Circle of Death",
+                "Contingency",
+                "Create Homunculus",
+                "Create Undead",
+                "Disintegrate",
+                "Eyebite",
+                "Flesh to Stone",
+                "Forbiddance",
+                "Harm",
+                "Heal",
+                "Magic Jar",
+                "Move Earth",
+                "Soul Cage",
+                "Tenser's Transformation",
+                "True Seeing",
+                "Wall of Thorns",
+                "Crown of Stars",
+                "Etherealness",
+                "Finger of Death",
+                "Fire Storm",
+                "Forcecage",
+                "Plane Shift",
+                "Power Word Pain",
+                "Prismatic Spray",
+                "Regenerate",
+                "Resurrection",
+                "Sequester",
+                "Simulacrum",
+                "Symbol",
+                "Antimagic Field",
+                "Antipathy/Sympathy",
+                "Clone",
+                "Dominate Monster",
+                "Earthquake",
+                "Feeblemind",
+                "Horrid Wilting",
+                "Maddening Darkness",
+                "Maze",
+                "Mighty Fortress",
+                "Mind Blank",
+                "Power Word Stun",
+                "Telepathy",
+                "Astral Projection",
+                "Imprisonment",
+                "Invulnerability",
+                "Mass Heal",
+                "Mass Polymorph",
+                "Power Word Heal",
+                "Power Word Kill",
+                "Psychic Scream",
+                "Shapechange",
+                "Time Stop",
+                "True Polymorph",
+                "True Resurrection",
+                "Weird",
+                "Wish"
+            ],
+            "fluff": 
+        [
+            {
+			    "type": "section",
+			    "name": "Blood Mage",
+			    "source": "BlodMage",
+			    "page": 1,
+			    "entries": [
+				    "Wizards study a wide variety of arcane spells and rituals in pursuit of greater knowledge and power.  Sorcerers draw upon a wellspring of innate magic available to them because of their exotic heritage. Blood mages carve their will into their own flesh, focusing their desires through offerings of blood.",
+				    {
+					    "type": "entries",
+					    "name": " Forbidden Rites",
+					    "page": 1,
+					    "entries": [
+						    "A wise mage once said 'Magic is the bloodstream of the universe.'",
+						    " To a blood mage this is undeniable truth, and the connection is quickly drawn between the cosmic flow of energy and one's own life essence.",
+						    "Blood mages have no use for spellbooks and ancient lore, nor do they rely on an otherwordly patron or deity to gift them with supernatural powers. Instead they see power as a tool to be used by those with the fortitude to do so."
+					    ]
+				    },
+				    {
+					    "type": "entries",
+					    "name": "Creating a Blood Mage",
+					    "page": 1,
+					    "entries": [
+				    		"Creating a blood mage character demands a backstory dominated by a thirst for esoteric knowledge and forbidden secrets. What was your first experience with death? How did you learn you had an aptitude for manipulating the Weave with your blood? Did you encounter a magical creature or an ancient tome that gave you your first glimpse at the dark potential of blood magic?",
+					    	{
+						    	"type": "entries",
+							    "name": "Quick Build",
+							    "page": 1,
+							    "entries": [
+								    "You can make a blood mage quickly by following these suggestions. First, Constitution should be your highest ability score, followed by Dexterity or Wisdom. Second, choose the hermit background. Third, choose the {@spell acid splash}, {@spell poison spray}, {@spell spare the dying}, and {@spell vicious mockery} cantrips, along with the 1st-level spells {@spell inflict wounds} and {@spell mage armor}."
+							    ]
+						        }
+					        ]
+				        }
+			        ]
+		        }
+            ]
+	    }
+    ],
+	"classFeature": 
+        [
+            {
 				"name": "Dark Art",
 				"source": "BloodMage",
 				"className": "Blood Mage",
@@ -846,39 +855,41 @@
 					"When you invoke a malediction you expend one of your hit dice. While invoking a malediction, but before it affects the target, you may choose to amplify its effect by suffering damage equal to a roll of the spent hit die. An amplified malediction gains an additional effect, noted in its description. Creatures that do not have blood in their bodies are immune to Maledictions (DM’s discretion).",
 					"You can use this feature once. You regain expended uses when you finish a short or long rest. Beginning at 5th level, you can use your Maledictions feature twice between rests, at 10th level you can use it three times between rests, and at 17th level, you can use it four times between rests.",
 					{
-						"type": "Options",
+						"type": "options",
 						"count": 1,
-						"entries": [{
-								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of Agony|BloodMage"
+						"entries": [
+                            {
+                            "optionalfeature": "Malediction of Agony|BloodMage",
+                            "type": "refOptionalfeature"
+
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of Binding|BloodMage"
+								"optionalfeature": "Malediction of Binding|BloodMage"
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of Corrosion|BloodMage"
+								"optionalfeature": "Malediction of Corrosion|BloodMage"
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of the Eyeless|BloodMage"
+								"optionalfeature": "Malediction of the Eyeless|BloodMage"
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of Fear|BloodMage"
+								"optionalfeature": "Malediction of Fear|BloodMage"
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of the Marked|BloodMage"
+								"optionalfeature": "Malediction of the Marked|BloodMage"
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of Shielding|BloodMage"
+								"optionalfeature": "Malediction of Shielding|BloodMage"
 							},
 							{
 								"type": "refOptionalfeature",
-								"optionalFeature": "Malediction of Vulerability|BloodMage"
+								"optionalfeature": "Malediction of Vulerability|BloodMage"
 							}
 						]
 					}
@@ -1038,7 +1049,56 @@
 				]
 			}
 		],
-		"subclassFeatures": [{
+    	"subclass": 
+        [
+            {
+				"name": "Necromancer",
+				"source": "BloodMage",
+				"shortName": "BM:N",
+				"subclassFeatures": [
+                    "Necromancer|Blood Mage|BloodMage|Necromancer|BloodMage|1",
+					"Soul Reaper|Blood Mage|BloodMage|Necromancer|BloodMage|1",
+					"Minion Master|Blood Mage|BloodMage|Necromancer|BloodMage|6",
+					"Death Magic Savant|Blood Mage|BloodMage|Necromancer|BloodMage|14",
+					"Keeper of Souls|Blood Mage|BloodMage|Necromancer|BloodMage|18"
+				],
+				"className": "Blood Mage",
+				"classSource": "BloodMage"
+			},
+			{
+				"name": "Rune Carver",
+				"source": "BloodMage",
+				"shortName": "BM:R",                
+				"subclassFeatures": [
+                    "Runecarver|Blood Mage|BloodMage|Rune Carver|BloodMage|1",
+                    "Runecarvers Proficiency|Blood Mage|BloodMage|Rune Carver|BloodMage|1",
+                    "Rune Magic|Blood Mage|BloodMage|Rune Carver|BloodMage|1",
+                    "Disciplined Flesh|Blood Mage|BloodMage|Rune Carver|BloodMage|1",
+					"Defensive Runes|Blood Mage|BloodMage|Rune Carver|BloodMage|6",
+					"Resilient Flesh|Blood Mage|BloodMage|Rune Carver|BloodMage|14",
+					"Rune Mastery|Blood Mage|BloodMage|Rune Carver|BloodMage|18"
+				],
+				"className": "Blood Mage",
+				"classSource": "BloodMage"
+			},
+			{
+				"name": "Witch Doctor",
+				"source": "BloodMage",
+				"shortName": "Witch BM:W",
+				"subclassFeatures": [
+                    
+					"Witch Doctor|Blood Mage|BloodMage|Witch Doctor|BloodMage|1",
+					"Venomous Proficiency|Blood Mage|BloodMage|Witch Doctor|BloodMage|6",
+                    "Toxic Savant|Blood Mage|BloodMage|Witch Doctor|BloodMage|14",
+                    "Blood Thrall|Blood Mage|BloodMage|Witch Doctor|BloodMage|18"
+				],
+				"className": "Blood Mage",
+				"classSource": "BloodMage"
+			}
+		],
+	"subclassFeature": 
+        [
+            {
 				"name": "Rune Carver",
 				"source": "BloodMage",
 				"className": "Blood Mage",
@@ -1047,19 +1107,7 @@
 				"subclassSource": "BloodMage",
 				"level": 1,
 				"entries": [
-					"You discovered how to enhance the power of your blood magic using the supernatural magic of runes. The ancient practice of rune magic originated with giants. Skiltgravr (“rune cutters”) can be found among any type of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant’s work carved into a hill or cave, learned of the runes from a traveling sage, or met the giant in person, you studied and adapted the giant’s craft. In time, you learned how to carve runes into your body and invoke their magic, ultimately becoming a Runecarver.",
-					{
-						"type": "refsubclassFeatures",
-						"subclassFeatures": "Runecarvers Proficiency|Blood Mage|BloodMage|Rune Carver|BloodMage|1"
-					},
-					{
-						"type": "refsubclassFeatures",
-						"subclassFeatures": "Disciplined Flesh|Blood Mage|BloodMage|Rune Carver|BloodMage|1"
-					},
-					{
-						"type": "refsubclassFeatures",
-						"subclassFeatures": "Rune Magic|Blood Mage|BloodMage|Rune Carver|BloodMage|1"
-					}
+					"You discovered how to enhance the power of your blood magic using the supernatural magic of runes. The ancient practice of rune magic originated with giants. Skiltgravr (“rune cutters”) can be found among any type of giants, and you likely learned your methods first or second hand from such a mystical artisan. Whether you found the giant’s work carved into a hill or cave, learned of the runes from a traveling sage, or met the giant in person, you studied and adapted the giant’s craft. In time, you learned how to carve runes into your body and invoke their magic, ultimately becoming a Runecarver."
 				]
 			},
 			{
@@ -1221,11 +1269,7 @@
 				"level": 1,
 				"entries": [
 					"For ages beyond measure, primitive cultures have both honored and feared the strange, seemingly miraculous powers of witch doctors. Mixing their blood with toxins and potent venoms from native beasts and plants, these enigmatic sages and gifted healers were once the ultimate authority on all things supernatural.",
-					"Now a forgotten relic of the past, a witch doctor is a rare sight in settled lands. Still, occasionally a great catastrophe or natural disaster might drive a savage people out of their homeland, bringing their mysterious brand of tribal magic into conflict with more civilized folk.",
-					{
-						"type": "refsubclassFeatures",
-						"subclassFeatures": "Tribal Leader|Blood Mage|BloodMage|Witch Doctor|BloodMage|1"
-					}
+					"Now a forgotten relic of the past, a witch doctor is a rare sight in settled lands. Still, occasionally a great catastrophe or natural disaster might drive a savage people out of their homeland, bringing their mysterious brand of tribal magic into conflict with more civilized folk."
 				]
 			},
 			{
@@ -1296,12 +1340,7 @@
 				"level": 1,
 				"entries": [
 					"You are touched by death, and have an affinity for manipulating the energy that animates creatures of flesh and bone. Perhaps you died once, briefly, and were brought back from the darkness just in time.  Or maybe you survived being exposed to powerful necromantic magic and were transformed by that experience.",
-					"Channeling this dark power affects your appearance, leaving visible signs that the magics you wield are unholy in nature. Perhaps you look deathly ill at all times, or your veins are unusually dark and vivid against your tight skin.",
-					{
-						"type": "refsubclassFeatures",
-						"subclassFeatures": "Soul Reaper | BloodMage | BloodMage | Necromancer | BloodMage | 1 | BloodMage "
-					}
-				]
+					"Channeling this dark power affects your appearance, leaving visible signs that the magics you wield are unholy in nature. Perhaps you look deathly ill at all times, or your veins are unusually dark and vivid against your tight skin."				]
 			},
 			{
 				"name": "Soul Reaper",
@@ -1361,7 +1400,9 @@
 				]
 			}
 		],
-		"optionalFeature": [{
+	"optionalfeature": 
+        [
+            {
 				"name": "Malediction of Agony",
 				"source": "BloodMage",
 				"page": 3,
@@ -1445,46 +1486,5 @@
 					"MA"
 				]
 			}
-		],
-		"subclass": [{
-				"name": "Necromancer",
-				"source": "BloodMage",
-				"shortName": "BM:N",
-				"subclassFeaturess": [
-					"Soul Reaper|Blood Mage|BloodMage|Necromancer|BloodMage|1",
-					"Minion Master|Blood Mage|BloodMage|Necromancer|BloodMage|6",
-					"Death Magic Savant|Blood Mage|BloodMage|Necromancer|BloodMage|14",
-					"Keeper of Souls|Blood Mage|BloodMage|Necromancer|BloodMage|18"
-				],
-				"className": "BloodMage",
-				"classSource": "BloodMage"
-			},
-			{
-				"name": "Rune Carver",
-				"source": "BloodMage",
-				"shortName": "BM:R",
-				"subclassFeaturess": [
-					"Runecarver|Blood Mage|BloodMage|Runecarver|BloodMage|1",
-					"Intelligent Oversight|Blood Mage|BloodMage|Runecarver|BloodMage|6",
-					"Runecarver Upgrades|Blood Mage|BloodMage|Runecarver|BloodMage|14",
-					"Autonomous Action|Blood Mage|BloodMage|Runecarver|BloodMage|18"
-				],
-				"className": "Blood Mage",
-				"classSource": "BloodMage"
-			},
-			{
-				"name": "Witch Doctor",
-				"source": "BloodMage",
-				"shortName": "Witch BM:W",
-				"subclassFeaturess": [
-					"Witch Doctor|Blood Mage|BloodMage|Witch Doctor|BloodMage|1",
-					"Spell Manual|Blood Mage|BloodMage|Witch Doctor|BloodMage|6",
-					"Learning Spells of 1st Level and Higher|Blood Mage|BloodMage|Witch Doctor|BloodMage|14",
-					"Infuse Magic|Blood Mage|BloodMage|Witch Doctor|BloodMage|18"
-				],
-				"className": "Blood Mage",
-				"classSource": "BloodMage"
-			}
 		]
 	}
-}
